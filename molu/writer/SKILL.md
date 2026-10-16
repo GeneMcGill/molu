@@ -1,6 +1,6 @@
 ---
 name: writer
-description: 按平台规格产出可发布的公众号长文或图文。写正式稿子时使用;短视频口播交给 video。
+description: ⑦写稿·按平台规格产出可发布的公众号长文或图文。写正式稿子时使用;短视频口播交给 video。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3 to query the engine data layer (kb.py).
 allowed-tools:

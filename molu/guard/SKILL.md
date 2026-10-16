@@ -1,6 +1,6 @@
 ---
 name: guard
-description: 发布前审核:法律/伦理/平台三层排查,给三档结论和最小改法。发稿前必过;只读,不改稿。
+description: ⑨审核·发布前审核:法律/伦理/平台三层排查,给三档结论和最小改法。发稿前必过;只读,不改稿。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3 for load_policy.py and config/guard-policy.json.
 allowed-tools:

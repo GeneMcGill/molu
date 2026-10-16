@@ -1,6 +1,6 @@
 ---
 name: topic
-description: 一个领域出 20 个可直接写的选题,每条带切入角度与依据。写不出新题时使用;不写正文。
+description: ⑤选题·一个领域出 20 个可直接写的选题,每条带切入角度与依据。写不出新题时使用;不写正文。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3 for the data layer. Queries the bundled kb.py at the engine root.
 allowed-tools:

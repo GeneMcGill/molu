@@ -12,37 +12,19 @@
 #   bash install.sh agents           # 只装源（~/.agents/skills）
 #   bash install.sh uninstall        # 全部卸载
 #   bash install.sh status           # 查看安装状态
-#   bash install.sh pi --single writer   # 只装单个模块（编号命名自动跟随）
+#   bash install.sh pi --single writer   # 只装单个模块
 #   KOTO_SOURCE=/path bash install.sh agents   # 自定义源位置
 
 set -eo pipefail   # 不用 -u：bash 3.2 兼容
 
 SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PREFIX="molu-"
+# 安装顺序即管道顺序：总控→洞察→策略→雷达→选题→复用→写稿→短视频→审核→拆解→视角。
+# 面板按名称字典序展示，整体顺序在面板中不可控；模块在 description 开头用 ①→⑪ 标注流程位次。
 MODULES="console insight strategy radar topic reuse writer video guard teardown lens"
 SOURCE_DIR="${KOTO_SOURCE:-$HOME/.agents/skills}"
-
-# 安装名按架构流程编号（01→11），agent 的 /molu 弹出列表按字典序即管道顺序：
-#   01 总控 → 02 洞察 → 03 策略 → 04 雷达 → 05 选题 → 06 复用
-#   → 07 写稿 → 08 短视频 → 09 审核 → 10 拆解 → 11 视角
-export_name() {
-  case "$1" in
-    console)  echo "01-console"  ;;
-    insight)  echo "02-insight"  ;;
-    strategy) echo "03-strategy" ;;
-    radar)    echo "04-radar"    ;;
-    topic)    echo "05-topic"    ;;
-    reuse)    echo "06-reuse"    ;;
-    writer)   echo "07-writer"   ;;
-    video)    echo "08-video"    ;;
-    guard)    echo "09-guard"    ;;
-    teardown) echo "10-teardown" ;;
-    lens)     echo "11-lens"     ;;
-    *) echo "$1" ;;
-  esac
-}
-# 安装后的最终名，如 molu-01-console
-skill_name() { printf '%s%s' "$PREFIX" "$(export_name "$1")"; }
+# 安装后的最终名：molu-<模块>，不插序号，不插序号
+skill_name() { printf '%s%s' "$PREFIX" "$1"; }
 
 # 用函数代替关联数组，兼容 bash 3.2
 target_path() {
@@ -113,8 +95,6 @@ link_target() {
     local name; name="$(skill_name "$m")"
     local t="$dst/$name"
     [ -e "$t" ] && [ ! -L "$t" ] && rm -rf "$t"   # 清掉旧实体目录
-    # 清掉旧版无序号命名（molu-console 等），避免残留旧入口
-    [ -e "$dst/$PREFIX$m" ] && rm -rf "$dst/$PREFIX$m"
     ln -sfn "$SOURCE_DIR/$name" "$t"
     n=$((n+1))
   done
@@ -233,10 +213,10 @@ done
 
 step "完成"
 log ""
-log "调用方式（编号按架构流程排序，输入 /molu 可看到完整管道顺序）："
-log "  /molu-01-console  这套东西能干嘛"
-log "  /molu-07-writer   帮我写一篇"
-log "  /molu-09-guard    这篇能发吗"
+log "调用方式（输入 /molu 过滤面板；管道位置见各模块 description 开头的 ①→⑪）："
+log "  /molu-console  这套东西能干嘛"
+log "  /molu-writer   帮我写一篇"
+log "  /molu-guard    这篇能发吗"
 log ""
 log "数据层: ${SOURCE_DIR}/kb.py + inlets（所有 agent 共用一份）"
 log "查看状态: bash install.sh status"

@@ -1,6 +1,6 @@
 ---
 name: console
-description: 墨炉总控台。判断该先做洞察、出题、写稿还是过审,并调度对应模块。不知道从哪开始、或问这套工具能干嘛时使用。
+description: ①总控·墨炉总控台。判断该先做洞察、出题、写稿还是过审,并调度对应模块。不知道从哪开始、或问这套工具能干嘛时使用。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3. Calls kb.py and other bundled modules from the engine root.
 allowed-tools:

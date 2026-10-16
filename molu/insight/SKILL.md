@@ -1,6 +1,6 @@
 ---
 name: insight
-description: 洞察研究。搞清读者是谁、卡在哪、未被满足的需求。做用户画像或内容没人看诊断时使用。
+description: ②洞察·洞察研究。搞清读者是谁、卡在哪、未被满足的需求。做用户画像或内容没人看诊断时使用。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: No local runtime dependency; may use web search when available.
 allowed-tools:

@@ -1,6 +1,6 @@
 ---
 name: strategy
-description: 内容策略。定位置、人群、节奏、形式,含「不做什么」。定账号方向或多平台分工时使用。
+description: ③策略·内容策略。定位置、人群、节奏、形式,含「不做什么」。定账号方向或多平台分工时使用。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: No local runtime dependency; may use web search when available.
 allowed-tools:

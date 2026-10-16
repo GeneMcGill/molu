@@ -1,6 +1,6 @@
 ---
 name: radar
-description: 抓实时热点,过滤红线,转成可写角度。问最近能写什么热点时使用;不写正文。
+description: ④雷达·抓实时热点,过滤红线,转成可写角度。问最近能写什么热点时使用;不写正文。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3, curl, and network access. Depends on the last30days-cn skill for hot-board data.
 allowed-tools:

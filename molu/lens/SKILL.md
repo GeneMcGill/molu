@@ -1,6 +1,6 @@
 ---
 name: lens
-description: 用内容从业者判断标准复盘写作决策。问这个判断够不够狠、该不该这么做时使用;贯穿全程。
+description: ⑪视角·用内容从业者判断标准复盘写作决策。问这个判断够不够狠、该不该这么做时使用;贯穿全程。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3 to query the engine data layer (kb.py).
 allowed-tools:
