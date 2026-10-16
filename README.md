@@ -1,14 +1,16 @@
-# molu
+# molu 墨炉
 
 简体中文
 
-molu 是 GeneMcGill 的中文内容生产引擎 Skill 包，包含洞察研究、策略定位、热点选题、写稿、发布审核与爆款拆解等能力，可安装到支持 Skills 的 AI Agent 中使用
+**molu 墨炉**是中文内容生产引擎 Skill 包，包含洞察研究、策略定位、热点选题、写稿、发布审核与爆款拆解等能力，可安装到支持 Skills 的 AI Agent 中使用
 
 [![Version](https://img.shields.io/badge/version-1.0.0-2563EB.svg?style=flat-square)](https://github.com/GeneMcGill/molu/releases)
 [![Skills](https://img.shields.io/badge/skills-11%20modules-7C3AED.svg?style=flat-square)](#按任务查找-skill)
-[![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-16A34A.svg?style=flat-square)](LICENSE)
+[![Sync Upstream](https://img.shields.io/badge/sync%20upstream-molu--engine-F59E0B.svg?style=flat-square)](https://github.com/GeneMcGill/molu-engine)
+[![Release](https://img.shields.io/badge/release-v1.0.0-0EA5E9.svg?style=flat-square)](https://github.com/GeneMcGill/molu/releases)
+[![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-16A34A.svg?style=flat-square)](#许可证)
 
-支持 Claude Code、Codex、WorkBuddy 和其他兼容 Skills 的 Agent。方法论由 899 篇公开公众号原文（2015-09 ~ 2018-12，213 万字）蒸馏而来，经实测提取 16,227 个内容单元，逐字校验命中率 100%。作者：GeneMcGill
+支持 Claude Code、Codex、WorkBuddy 和其他兼容 Skills 的 Agent。方法论由 899 篇公开公众号原文（2015-09 ~ 2018-12，213 万字）蒸馏而来，经实测提取 16,227 个内容单元，逐字校验命中率 100%
 
 **本次更新：** v1.0.0 首次公开——11 个模块的方法论与引擎、统一数据层 kb.py、安装脚本；语料素材不入包，经本地进气阀接入
 
@@ -173,10 +175,11 @@ python3 molu/kb.py install <id>      # 接入语料源（带口径校验）
 
 | 资料 | 用途 |
 | --- | --- |
-| [引擎说明（中文）](molu/README.md) | 数据层 kb.py、语料源接入、审核立场的完整说明 |
+| [数据层 kb.py](molu/kb.py) | 语料查询与语料源接入的实现入口（脚本内含使用说明） |
 | [方法论正本](molu/references/外部方法论库.md) | 4A / STP / JTBD 等外部框架的章节索引 |
 | [拆解基线](molu/teardown/references/dist.json) | 899 篇实测分布，供偏离度诊断 |
-| [语料源专有词表规则](molu/scripts/inlet_check.py) | 自建语料源的接入校验 |
+| [语料源接入校验](molu/scripts/inlet_check.py) | 自建语料源的接入口径与拒绝规则 |
+| [更新记录](https://github.com/GeneMcGill/molu/commits/main) | 查看提交历史与版本变更 |
 
 ## 更新、问题与支持
 
@@ -194,7 +197,32 @@ python3 molu/kb.py install <id>      # 接入语料源（带口径校验）
 
 - [提交问题或建议](https://github.com/GeneMcGill/molu/issues)
 - 引擎完整文档：[molu/README.md](molu/README.md)
-- 作者：GeneMcGill
+
+## 数据与方法来源（致谢）
+
+本引擎不是凭空设计，来源分三类，全部显式说明：
+
+**语料与方法归纳**
+
+- 咪蒙自述与公开公众号原文（899 篇，2015-09 ~ 2018-12）。本仓库方法论中的中文情绪写作规律（结构、钩子、转折、情绪放大等）**由这批公开文本归纳而来**，原始版权属于作者及原公众号，本包不含任何逐字引用
+- 语料蒸馏的操作规范与质量控制方法（单元冻结、词表唯一真源、逐字校验）为本项目独立实践
+
+**框架借鉴**
+
+方法论不是纯经验，与以下公开方法体系交叉验证过：
+
+- 4A 工作流（Account Planning / Brand Strategy / SPJ 伦理原则）
+- STP 定位模型与 Aaker 品牌资产模型
+- JTBD（Jobs to Be Done）用户任务视角
+- 金字塔原理（结构化表达）
+- 发布安全参考：IAB Brand Safety / GARM 12 类、Fact-checking 流程
+- 分析视角：AARRR、HEART、高低语境等（详见 [外部方法论库](molu/references/外部方法论库.md)）
+
+**结构与生态**
+
+- README 结构与“ Skill 包 + 数据层”的分发形态参考了 [dontbesilent2025/dbskill](https://github.com/dontbesilent2025/dbskill)（CC BY-NC 4.0），并修复了我们已经证实的原子化截断等问题
+
+以上列举仅为说明方法论来源与关联，不意味着这些组织或作者自身为本项目背书。若任何来源希望被调整引用或删除，可开 issue，我们会快速处理。
 
 ## 许可证
 
