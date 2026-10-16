@@ -1,6 +1,6 @@
 ---
 name: reuse
-description: 把一个已验证的主题反复写十次，每次换一个切入角度，形成可持续的选题产能。当用户说"这个选题还能怎么写""同一个话题写腻了""怎么持续产出""一个主题怎么拆成十篇""选题复用""内容矩阵"时使用。
+description: 一个已验证的主题拆出十个不同角度,五种换角度方式。同一话题要持续产出时使用。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3 for the data layer. Queries the bundled kb.py at the engine root.
 allowed-tools:

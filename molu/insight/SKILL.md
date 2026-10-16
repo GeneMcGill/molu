@@ -1,6 +1,6 @@
 ---
 name: insight
-description: 在动笔之前做洞察研究——搞清楚读者是谁、他们的真实处境、以及内容能提供什么价值。当用户说"我的读者是谁""用户想要什么""这个选题有没有人看""帮我做用户画像""为什么我的内容没人转""洞察是什么"时使用。对应 4A 的 Account Planning 与媒体的受众研究环节。
+description: 洞察研究。搞清读者是谁、卡在哪、未被满足的需求。做用户画像或内容没人看诊断时使用。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: No local runtime dependency; may use web search when available.
 allowed-tools:

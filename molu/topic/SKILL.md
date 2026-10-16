@@ -1,6 +1,6 @@
 ---
 name: topic
-description: 输入一个领域或行业，生成 20 个可直接写的选题，每条附标题、切入角度、依据。当用户说"不知道写什么""帮我想选题""这个领域能写什么""给我一批标题""每周发什么""选题库"时使用。
+description: 一个领域出 20 个可直接写的选题,每条带切入角度与依据。写不出新题时使用;不写正文。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3 for the data layer. Queries the bundled kb.py at the engine root.
 allowed-tools:

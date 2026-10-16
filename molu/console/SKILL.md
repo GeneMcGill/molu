@@ -1,6 +1,6 @@
 ---
 name: console
-description: 墨炉 molu 总入口——显示可视化管道图，判断用户在哪一环，并调度对应模块。当用户说"这套东西能干嘛""有哪些模块""我不知道从哪开始""帮我做内容""内容怎么规划"时使用。
+description: 墨炉总控台。判断该先做洞察、出题、写稿还是过审,并调度对应模块。不知道从哪开始、或问这套工具能干嘛时使用。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3. Calls kb.py and other bundled modules from the engine root.
 allowed-tools:

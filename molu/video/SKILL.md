@@ -1,6 +1,6 @@
 ---
 name: video
-description: 把观点或故事做成短视频口播脚本，含前3秒钩子、分镜节奏、字幕切分与结尾引导。当用户要写抖音 / 视频号 / TikTok / Shorts / Reels 口播脚本、要把长文改成短视频、要"60秒讲清楚一件事"、或要短视频开头怎么写时使用。
+description: 短视频口播脚本:前 3 秒钩子、分镜节奏、字幕切分。把观点或长文改成抖音/视频号稿时使用。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3 to query the engine data layer (kb.py).
 allowed-tools:

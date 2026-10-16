@@ -1,6 +1,6 @@
 ---
 name: teardown
-description: 拆解一篇内容为什么爆或为什么不爆，输出可复用的结构结论。当用户要求"分析这篇为什么爆""拆解爆款""这个标题为什么没人点""帮我看看这篇哪里不行""对比我和对标账号的差异"时使用。基于 899 篇实测基线做偏离度诊断，不给主观印象。
+description: 基于 899 篇实测基线,12 指标拆解一篇内容为什么爆/为什么不爆。分析对标差距时使用。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3. Ships scripts/analyze.py and references/dist.json.
 allowed-tools:

@@ -1,6 +1,6 @@
 ---
 name: guard
-description: 内容发布前的合规与风险审核——法律、伦理、平台三层排查，结论分三档（可改/劝退换题/不建议发），输出具体位置和最小修改动作。当用户说"这篇能不能发""帮我审一下""有没有风险""会不会被封""敏感词""平台审核会卡吗"时使用。只读模块，没有改稿权限。
+description: 发布前审核:法律/伦理/平台三层排查,给三档结论和最小改法。发稿前必过;只读,不改稿。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3 for load_policy.py and config/guard-policy.json.
 allowed-tools:

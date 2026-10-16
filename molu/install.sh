@@ -12,7 +12,7 @@
 #   bash install.sh agents           # 只装源（~/.agents/skills）
 #   bash install.sh uninstall        # 全部卸载
 #   bash install.sh status           # 查看安装状态
-#   bash install.sh pi --single writer   # 只装单个模块
+#   bash install.sh pi --single writer   # 只装单个模块（编号命名自动跟随）
 #   KOTO_SOURCE=/path bash install.sh agents   # 自定义源位置
 
 set -eo pipefail   # 不用 -u：bash 3.2 兼容
@@ -21,6 +21,28 @@ SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PREFIX="molu-"
 MODULES="console insight strategy radar topic reuse writer video guard teardown lens"
 SOURCE_DIR="${KOTO_SOURCE:-$HOME/.agents/skills}"
+
+# 安装名按架构流程编号（01→11），agent 的 /molu 弹出列表按字典序即管道顺序：
+#   01 总控 → 02 洞察 → 03 策略 → 04 雷达 → 05 选题 → 06 复用
+#   → 07 写稿 → 08 短视频 → 09 审核 → 10 拆解 → 11 视角
+export_name() {
+  case "$1" in
+    console)  echo "01-console"  ;;
+    insight)  echo "02-insight"  ;;
+    strategy) echo "03-strategy" ;;
+    radar)    echo "04-radar"    ;;
+    topic)    echo "05-topic"    ;;
+    reuse)    echo "06-reuse"    ;;
+    writer)   echo "07-writer"   ;;
+    video)    echo "08-video"    ;;
+    guard)    echo "09-guard"    ;;
+    teardown) echo "10-teardown" ;;
+    lens)     echo "11-lens"     ;;
+    *) echo "$1" ;;
+  esac
+}
+# 安装后的最终名，如 molu-01-console
+skill_name() { printf '%s%s' "$PREFIX" "$(export_name "$1")"; }
 
 # 用函数代替关联数组，兼容 bash 3.2
 target_path() {
@@ -52,7 +74,7 @@ install_source() {
 
   local n=0
   for m in $USE_MODULES; do
-    local target="$SOURCE_DIR/$PREFIX$m"
+    local target="$SOURCE_DIR/$(skill_name "$m")"
     rm -rf "$target"
     mkdir -p "$target"
     cp -R "$SRC/$m/." "$target/"
@@ -88,9 +110,12 @@ link_target() {
   local dst="$1" n=0
   mkdir -p "$dst"
   for m in $USE_MODULES; do
-    local t="$dst/$PREFIX$m"
+    local name; name="$(skill_name "$m")"
+    local t="$dst/$name"
     [ -e "$t" ] && [ ! -L "$t" ] && rm -rf "$t"   # 清掉旧实体目录
-    ln -sfn "$SOURCE_DIR/$PREFIX$m" "$t"
+    # 清掉旧版无序号命名（molu-console 等），避免残留旧入口
+    [ -e "$dst/$PREFIX$m" ] && rm -rf "$dst/$PREFIX$m"
+    ln -sfn "$SOURCE_DIR/$name" "$t"
     n=$((n+1))
   done
   for f in kb.py inlets; do
@@ -106,7 +131,11 @@ uninstall_from() {
   local dst="$1" n=0
   [ -d "$dst" ] || return 0
   for m in $MODULES; do
+    # 兼容清理：旧版 molu-console（无序号）与现有编号命名
     local t="$dst/$PREFIX$m"
+    if [ -L "$t" ]; then rm -f "$t"; n=$((n+1))
+    elif [ -d "$t" ]; then rm -rf "$t"; n=$((n+1)); fi
+    t="$dst/$(skill_name "$m")"
     if [ -L "$t" ]; then rm -f "$t"; n=$((n+1))
     elif [ -d "$t" ]; then rm -rf "$t"; n=$((n+1)); fi
   done
@@ -123,7 +152,7 @@ show_status() {
   log "源目录: $SOURCE_DIR"
   if [ -d "$SOURCE_DIR" ]; then
     local c=0
-    for m in $MODULES; do [ -e "$SOURCE_DIR/$PREFIX$m" ] && c=$((c+1)); done
+    for m in $MODULES; do [ -e "$SOURCE_DIR/$(skill_name "$m")" ] && c=$((c+1)); done
     log "  实体模块: $c / $(echo $MODULES | wc -w | tr -d ' ')"
   else
     log "  （未安装）"
@@ -133,7 +162,7 @@ show_status() {
     [ -d "$dst" ] || { printf '  %-10s ⬜ 目录不存在\n' "$k"; continue; }
     local c=0 r=0
     for m in $MODULES; do
-      local t="$dst/$PREFIX$m"
+      local t="$dst/$(skill_name "$m")"
       if [ -L "$t" ]; then c=$((c+1)); elif [ -d "$t" ]; then r=$((r+1)); fi
     done
     printf '  %-10s %s 软链 %s / 实体 %s\n' "$k" "$dst" "$c" "$r"
@@ -204,10 +233,10 @@ done
 
 step "完成"
 log ""
-log "调用方式（模块名带 $PREFIX 前缀，防与已有 skill 撞名）："
-log "  /molu-console  这套东西能干嘛"
-log "  /molu-writer   帮我写一篇"
-log "  /molu-guard    这篇能发吗"
+log "调用方式（编号按架构流程排序，输入 /molu 可看到完整管道顺序）："
+log "  /molu-01-console  这套东西能干嘛"
+log "  /molu-07-writer   帮我写一篇"
+log "  /molu-09-guard    这篇能发吗"
 log ""
 log "数据层: ${SOURCE_DIR}/kb.py + inlets（所有 agent 共用一份）"
 log "查看状态: bash install.sh status"

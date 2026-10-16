@@ -1,6 +1,6 @@
 ---
 name: lens
-description: 用「为读者代骂」这一中文情绪写作流派的判断标准，审视内容决策。当用户说"这个选题该不该做""标题够不够狠""我是不是太温和了""从内容从业者角度看看""这个决策对不对"时使用。不扮演任何人，只用这套判断标准做审视。
+description: 用内容从业者判断标准复盘写作决策。问这个判断够不够狠、该不该这么做时使用;贯穿全程。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3 to query the engine data layer (kb.py).
 allowed-tools:

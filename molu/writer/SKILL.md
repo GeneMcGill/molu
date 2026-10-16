@@ -1,6 +1,6 @@
 ---
 name: writer
-description: 用经过实测校验的中文内容写作方法，按目标平台产出可直接发布的文案。当用户要写公众号 / 知乎 / 小红书 / 短视频口播 / 朋友圈 / Substack 文案，或要求"爆款风格""情绪文""高转发""封面金句""拆解一篇爆文"时使用。不扮演人物，只做写作工具。
+description: 按平台规格产出可发布的公众号长文或图文。写正式稿子时使用;短视频口播交给 video。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3 to query the engine data layer (kb.py).
 allowed-tools:

@@ -1,6 +1,6 @@
 ---
 name: radar
-description: 抓取实时热点并转成可写的选题，让内容跟上当下节奏。当用户说"最近有什么热点""帮我找个能写的热点""今天有什么可以写的""这个热点能怎么写""跟上时代""内容过时了"时使用。只做热点采集与筛选，不写正文。
+description: 抓实时热点,过滤红线,转成可写角度。问最近能写什么热点时使用;不写正文。
 license: "CC BY-NC 4.0 for the methodology. Bundled corpus excerpts are for local research only and must not be redistributed."
 compatibility: Requires python3, curl, and network access. Depends on the last30days-cn skill for hot-board data.
 allowed-tools:
