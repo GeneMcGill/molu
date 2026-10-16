@@ -1,0 +1,792 @@
+{
+ "fetched_at": "2026-10-16",
+ "source": "last30days-cn --hot",
+ "stats": {
+  "raw": 75,
+  "deduped": 71,
+  "writable": 59,
+  "redline_dropped": 12
+ },
+ "items": [
+  {
+   "title": "母亲将大一儿子生活费从4000降至2000",
+   "platforms": "微博热搜#1、百度热搜#6",
+   "cross": true,
+   "platforms_list": [
+    "微博",
+    "百度"
+   ],
+   "platform_count": 2,
+   "topics": [
+    "生活方式"
+   ]
+  },
+  {
+   "title": "洛阳博物馆闭馆是因挖出传国玉玺？假",
+   "platforms": "头条热榜#11、百度热搜#12",
+   "cross": true,
+   "platforms_list": [
+    "头条"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "男子中1000万不到一月花到仅剩28元",
+   "platform": "头条",
+   "heat": "1877.1万",
+   "cross": false,
+   "platforms_list": [
+    "头条"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "两性关系"
+   ]
+  },
+  {
+   "title": "读懂中国粮的丰收密码",
+   "platform": "头条",
+   "heat": "1536.9万",
+   "cross": false,
+   "platforms_list": [
+    "头条"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "张雪机车再冲第七冠",
+   "platform": "头条",
+   "heat": "1390.6万",
+   "cross": false,
+   "platforms_list": [
+    "头条"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "人民日报：严打“公考围岗”",
+   "platform": "头条",
+   "heat": "1258.3万",
+   "cross": false,
+   "platforms_list": [
+    "头条"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "CBA新赛季揭幕战上海大胜深圳",
+   "platform": "抖音",
+   "heat": "1216.2万",
+   "cross": false,
+   "platforms_list": [
+    "抖音"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "胜利山上望征途",
+   "platform": "抖音",
+   "heat": "1196.3万",
+   "cross": false,
+   "platforms_list": [
+    "抖音"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "李斌谈特斯拉会飞：这个我们真没有",
+   "platform": "头条",
+   "heat": "1138.5万",
+   "cross": false,
+   "platforms_list": [
+    "头条"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "喀纳斯秋日实况",
+   "platform": "抖音",
+   "heat": "1044.4万",
+   "cross": false,
+   "platforms_list": [
+    "抖音"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "樊振东现身凯迪拉克XT5 PHEV发布会",
+   "platform": "头条",
+   "heat": "1030.2万",
+   "cross": false,
+   "platforms_list": [
+    "头条"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "古早感美式复古秋冬穿搭",
+   "platform": "抖音",
+   "heat": "990.1万",
+   "cross": false,
+   "platforms_list": [
+    "抖音"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "外貌与身材"
+   ]
+  },
+  {
+   "title": "多个手机品牌集体宣布降价",
+   "platform": "头条",
+   "heat": "932.2万",
+   "cross": false,
+   "platforms_list": [
+    "头条"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "生活方式"
+   ]
+  },
+  {
+   "title": "一块会飞上天的滑板简直太酷了",
+   "platform": "抖音",
+   "heat": "848.6万",
+   "cross": false,
+   "platforms_list": [
+    "抖音"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "习近平在内蒙古乌兰察布考察",
+   "platform": "百度",
+   "heat": "790.5万",
+   "cross": false,
+   "platforms_list": [
+    "百度"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "胡塞袭击利雅得机场致17死333伤",
+   "platform": "抖音",
+   "heat": "789.1万",
+   "cross": false,
+   "platforms_list": [
+    "抖音"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "飞行汽车概念全线爆发",
+   "platform": "抖音",
+   "heat": "783.5万",
+   "cross": false,
+   "platforms_list": [
+    "抖音"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "社会热点"
+   ]
+  },
+  {
+   "title": "马杜罗夫妇纽约出庭否认新增指控",
+   "platform": "抖音",
+   "heat": "782.1万",
+   "cross": false,
+   "platforms_list": [
+    "抖音"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "婚姻家庭"
+   ]
+  },
+  {
+   "title": "存款利率普遍上调了",
+   "platform": "百度",
+   "heat": "780.9万",
+   "cross": false,
+   "platforms_list": [
+    "百度"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "金钱观"
+   ]
+  },
+  {
+   "title": "CBA常规赛赛程发布",
+   "platform": "抖音",
+   "heat": "777.9万",
+   "cross": false,
+   "platforms_list": [
+    "抖音"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "“搭子社交” 灰色交易",
+   "platform": "百度",
+   "heat": "771.4万",
+   "cross": false,
+   "platforms_list": [
+    "百度"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "社交与人际"
+   ]
+  },
+  {
+   "title": "黄海南部连续47天禁入藏了什么深意",
+   "platform": "头条",
+   "heat": "763.2万",
+   "cross": false,
+   "platforms_list": [
+    "头条"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "端牢中国饭碗 底气从何而来",
+   "platform": "百度",
+   "heat": "761.6万",
+   "cross": false,
+   "platforms_list": [
+    "百度"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "37岁女子产后心脏骤停3小时被救回",
+   "platform": "百度",
+   "heat": "752.0万",
+   "cross": false,
+   "platforms_list": [
+    "百度"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "两性关系"
+   ]
+  },
+  {
+   "title": "明代古宅蔡厅5根承重木柱被人锯断",
+   "platform": "百度",
+   "heat": "723.2万",
+   "cross": false,
+   "platforms_list": [
+    "百度"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "A股 回购浪潮",
+   "platform": "百度",
+   "heat": "713.8万",
+   "cross": false,
+   "platforms_list": [
+    "百度"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "金钱观"
+   ]
+  },
+  {
+   "title": "手机掉进地铁缝连播16小时短剧",
+   "platform": "百度",
+   "heat": "704.1万",
+   "cross": false,
+   "platforms_list": [
+    "百度"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "生活方式"
+   ]
+  },
+  {
+   "title": "他牺牲那年十三岁 手还伸向那只碗",
+   "platform": "百度",
+   "heat": "694.9万",
+   "cross": false,
+   "platforms_list": [
+    "百度"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "洛阳辟谣挖出“传国玉玺”",
+   "platform": "百度",
+   "heat": "685.0万",
+   "cross": false,
+   "platforms_list": [
+    "百度"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "大厂员工吐槽新来的校招生特别mean，被回复不mean根本过不了面试，真的吗？面试到底在选什么样的人？",
+   "platform": "知乎",
+   "heat": "667.0万",
+   "cross": false,
+   "platforms_list": [
+    "知乎"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "职场"
+   ]
+  },
+  {
+   "title": "庾澄庆说不会和伊能静同框",
+   "platform": "头条",
+   "heat": "624.8万",
+   "cross": false,
+   "platforms_list": [
+    "头条"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "传国玉玺最后一次可信的出现是什么时候？",
+   "platform": "知乎",
+   "heat": "350.0万",
+   "cross": false,
+   "platforms_list": [
+    "知乎"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "S16入围赛首日有多离谱",
+   "platform": "B站",
+   "heat": "264.3万",
+   "cross": false,
+   "platforms_list": [
+    "B站"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "女子在自己手机上登录前男友账号以「1314」等金额转走近二十万，法院判决全部返还，如何从法律角度解读？",
+   "platform": "知乎",
+   "heat": "201.0万",
+   "cross": false,
+   "platforms_list": [
+    "知乎"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "两性关系",
+    "生活方式"
+   ]
+  },
+  {
+   "title": "明朝永乐大钟重46吨，钟身刻满23万字佛经。当时没有起重机，工匠是怎么把它挂到钟楼上的？",
+   "platform": "知乎",
+   "heat": "195.0万",
+   "cross": false,
+   "platforms_list": [
+    "知乎"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "四部门组织30余家车企座谈，加强产品研发测试验证管理，要求不得作虚假、夸大或引人误解的宣传，怎样解读？",
+   "platform": "知乎",
+   "heat": "183.0万",
+   "cross": false,
+   "platforms_list": [
+    "知乎"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "婚姻家庭"
+   ]
+  },
+  {
+   "title": "全球智能手机出货量第三季度同比降 22% ，创有纪录以来最大降幅，背后是什么原因？",
+   "platform": "知乎",
+   "heat": "170.0万",
+   "cross": false,
+   "platforms_list": [
+    "知乎"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "生活方式"
+   ]
+  },
+  {
+   "title": "普通人能接住马龙的发球吗?",
+   "platform": "知乎",
+   "heat": "167.0万",
+   "cross": false,
+   "platforms_list": [
+    "知乎"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "枪械为什么要造得这么容易拆卸，连个螺丝都不用？",
+   "platform": "知乎",
+   "heat": "163.0万",
+   "cross": false,
+   "platforms_list": [
+    "知乎"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "如何看待微软已完成2.8T大模型的预训练？",
+   "platform": "知乎",
+   "heat": "159.0万",
+   "cross": false,
+   "platforms_list": [
+    "知乎"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "珠穆朗玛峰只有一半在中国，为何全世界都认为是我国的？",
+   "platform": "知乎",
+   "heat": "157.0万",
+   "cross": false,
+   "platforms_list": [
+    "知乎"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "河北卫视靠孙颖莎收视登顶了",
+   "platform": "微博",
+   "heat": "98.4万",
+   "cross": false,
+   "platforms_list": [
+    "微博"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "真人演绎扫码免费领陷阱",
+   "platform": "B站",
+   "heat": "87.8万",
+   "cross": false,
+   "platforms_list": [
+    "B站"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "塞尔达传说时之笛上手前瞻",
+   "platform": "B站",
+   "heat": "87.3万",
+   "cross": false,
+   "platforms_list": [
+    "B站"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "世界周侃谈黑客袭击法国超市冰柜",
+   "platform": "B站",
+   "heat": "79.3万",
+   "cross": false,
+   "platforms_list": [
+    "B站"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "李昀锐好像要爱死孟子义了",
+   "platform": "微博",
+   "heat": "67.2万",
+   "cross": false,
+   "platforms_list": [
+    "微博"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "两性关系"
+   ]
+  },
+  {
+   "title": "无畏契约美洲赛区强在哪",
+   "platform": "B站",
+   "heat": "64.0万",
+   "cross": false,
+   "platforms_list": [
+    "B站"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "外貌与身材"
+   ]
+  },
+  {
+   "title": "KRL爆料m0NESY续约薪资",
+   "platform": "B站",
+   "heat": "61.8万",
+   "cross": false,
+   "platforms_list": [
+    "B站"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "金钱观",
+    "社会热点"
+   ]
+  },
+  {
+   "title": "傅首尔新片投资5000万票房仅8万",
+   "platform": "微博",
+   "heat": "58.5万",
+   "cross": false,
+   "platforms_list": [
+    "微博"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "金钱观"
+   ]
+  },
+  {
+   "title": "医生在4岁宝宝睫毛上发现阴虱",
+   "platform": "微博",
+   "heat": "58.2万",
+   "cross": false,
+   "platforms_list": [
+    "微博"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "嫁金钗",
+   "platform": "微博",
+   "heat": "58.0万",
+   "cross": false,
+   "platforms_list": [
+    "微博"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "两性关系"
+   ]
+  },
+  {
+   "title": "孙颖莎省运会火炬手直播在线人数超百万",
+   "platform": "微博",
+   "heat": "57.7万",
+   "cross": false,
+   "platforms_list": [
+    "微博"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "金钱观"
+   ]
+  },
+  {
+   "title": "伊藤美诚无声告别国际乒坛",
+   "platform": "微博",
+   "heat": "57.1万",
+   "cross": false,
+   "platforms_list": [
+    "微博"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "外貌与身材"
+   ]
+  },
+  {
+   "title": "徐艺洋 孩子是我自己生的",
+   "platform": "微博",
+   "heat": "56.6万",
+   "cross": false,
+   "platforms_list": [
+    "微博"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "亲子育儿"
+   ]
+  },
+  {
+   "title": "黄子韬谁欺负我老婆了",
+   "platform": "微博",
+   "heat": "56.4万",
+   "cross": false,
+   "platforms_list": [
+    "微博"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "婚姻家庭"
+   ]
+  },
+  {
+   "title": "玉芬啊玉芬什么梗",
+   "platform": "B站",
+   "heat": "53.1万",
+   "cross": false,
+   "platforms_list": [
+    "B站"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "DeepSeek整合成立产品部",
+   "platform": "B站",
+   "heat": "45.2万",
+   "cross": false,
+   "platforms_list": [
+    "B站"
+   ],
+   "platform_count": 1,
+   "topics": []
+  },
+  {
+   "title": "全嘻嘻老公如何靠婚姻拿大结果",
+   "platform": "B站",
+   "heat": "45.2万",
+   "cross": false,
+   "platforms_list": [
+    "B站"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "两性关系",
+    "婚姻家庭"
+   ]
+  },
+  {
+   "title": "李秀满新女团成员盛艾敬争议",
+   "platform": "B站",
+   "heat": "45.2万",
+   "cross": false,
+   "platforms_list": [
+    "B站"
+   ],
+   "platform_count": 1,
+   "topics": [
+    "两性关系"
+   ]
+  }
+ ],
+ "redline_dropped": [
+  {
+   "title": "日本误报称发生 9.9 级地震，出现这种情况可能是因为啥原因？9.9 级地震是什么概念？",
+   "tags": [
+    "灾害"
+   ]
+  },
+  {
+   "title": "中央红军长征路线全览",
+   "tags": [
+    "时政/官方"
+   ]
+  },
+  {
+   "title": "日乒唯一乒乓奥运金牌出自伊藤美诚",
+   "tags": [
+    "体育赛事"
+   ]
+  },
+  {
+   "title": "9.9级地震是什么概念",
+   "tags": [
+    "灾害"
+   ]
+  },
+  {
+   "title": "英雄联盟S16世界赛开赛",
+   "tags": [
+    "体育赛事"
+   ]
+  },
+  {
+   "title": "国防部回应菲方多次挑衅行径",
+   "tags": [
+    "军事/国防",
+    "外交/国际"
+   ]
+  },
+  {
+   "title": "解放军南北六海域同时集训",
+   "tags": [
+    "军事/国防"
+   ]
+  },
+  {
+   "title": "国务院免去王刚原职 此前已履新河北",
+   "tags": [
+    "时政/官方"
+   ]
+  },
+  {
+   "title": "中方：中国核力量与美俄不在一个量级",
+   "tags": [
+    "军事/国防",
+    "外交/国际"
+   ]
+  },
+  {
+   "title": "重庆狼队战胜深圳DYG KPL",
+   "tags": [
+    "体育赛事"
+   ]
+  },
+  {
+   "title": "100T战胜G2 上海冠军赛",
+   "tags": [
+    "体育赛事"
+   ]
+  },
+  {
+   "title": "李在明颠覆性推动韩国「双首都迁都」，将外交部、国防部等迁出首尔，全部集中到世宗，怎么看他这一举措？",
+   "tags": [
+    "军事/国防",
+    "外交/国际"
+   ]
+  }
+ ]
+}

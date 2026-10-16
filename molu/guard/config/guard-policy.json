@@ -1,0 +1,98 @@
+{
+ "version": "1.0",
+ "default_profile": "general",
+ "tiers": {
+  "A": {
+   "name": "可改",
+   "default_action": "给具体改法",
+   "applies": [
+    "平台导流",
+    "绝对化用语",
+    "标题不兑现"
+   ]
+  },
+  "B": {
+   "name": "劝退换题",
+   "default_action": "只给理由与替代方向",
+   "applies": [
+    "时政",
+    "历史",
+    "宗教",
+    "军事",
+    "外交"
+   ]
+  },
+  "C": {
+   "name": "不建议发",
+   "default_action": "说明原因，不给改法",
+   "applies": [
+    "合成案例",
+    "消费悲剧",
+    "编造事实",
+    "点名单真人"
+   ]
+  }
+ },
+ "perspectives": {
+  "general": {
+   "label": "通用内容从业者",
+   "extra_redlines": [],
+   "relaxed": []
+  },
+  "parent": {
+   "label": "亲子/育儿创作者",
+   "note": "未成年人阈值更严",
+   "extra_redlines": [
+    "展示儿童真实面部",
+    "育儿焦虑放大",
+    "贬低单亲家庭"
+   ],
+   "relaxed": []
+  },
+  "finance": {
+   "label": "理财/金融创作者",
+   "note": "收益承诺一律升 B",
+   "extra_redlines": [
+    "承诺收益率",
+    "荐股",
+    "无资质金融建议",
+    "制造投资恐慌"
+   ],
+   "relaxed": []
+  },
+  "health": {
+   "label": "健康/医疗创作者",
+   "note": "医疗建议一律升 B",
+   "extra_redlines": [
+    "具体用药剂量",
+    "疗效承诺",
+    "替代就医建议"
+   ],
+   "relaxed": []
+  },
+  "creator": {
+   "label": "个人 IP / 情绪内容创作者",
+   "note": "合成案例是主要封号风险",
+   "extra_redlines": [
+    "用编造的他人经历当论据",
+    "把读者情绪当燃料但不给出口"
+   ],
+   "relaxed": [
+    "脏话/口语化表达"
+   ]
+  },
+  "b2b": {
+   "label": "B2B / 行业从业者",
+   "note": "同行竞品对比需降调",
+   "extra_redlines": [
+    "点名竞品并贬低",
+    "虚构客户案例"
+   ],
+   "relaxed": [
+    "行业黑话",
+    "尖锐观点"
+   ]
+  }
+ },
+ "note": "perspectives 是可热插拔的审核立场。同一段内容在不同立场下档位可能不同。审核前先确认用户以哪个立场发言。"
+}

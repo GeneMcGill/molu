@@ -1,0 +1,4 @@
+# 语料素材与逐字引用（不可分发）
+molu/inlets/
+__pycache__/
+*.pyc
