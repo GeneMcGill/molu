@@ -4,15 +4,15 @@
 
 **molu 墨炉**是中文内容生产引擎 Skill 包，包含洞察研究、策略定位、热点选题、写稿、发布审核与爆款拆解等能力，可安装到支持 Skills 的 AI Agent 中使用
 
-[![Version](https://img.shields.io/badge/version-1.0.0-2563EB.svg?style=flat-square)](https://github.com/GeneMcGill/molu/releases)
+[![Version](https://img.shields.io/badge/version-1.0.1-2563EB.svg?style=flat-square)](https://github.com/GeneMcGill/molu/releases)
 [![Skills](https://img.shields.io/badge/skills-11%20modules-7C3AED.svg?style=flat-square)](#按任务查找-skill)
 [![Sync Upstream](https://img.shields.io/badge/sync%20upstream-molu--engine-F59E0B.svg?style=flat-square)](https://github.com/GeneMcGill/molu-engine)
-[![Release](https://img.shields.io/badge/release-v1.0.0-0EA5E9.svg?style=flat-square)](https://github.com/GeneMcGill/molu/releases)
+[![Release](https://img.shields.io/badge/release-v1.0.1-0EA5E9.svg?style=flat-square)](https://github.com/GeneMcGill/molu/releases)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-16A34A.svg?style=flat-square)](#许可证)
 
 支持 Claude Code、Codex、WorkBuddy 和其他兼容 Skills 的 Agent。方法论由 899 篇公开公众号原文（2015-09 ~ 2018-12，213 万字）蒸馏而来，经实测提取 16,227 个内容单元，逐字校验命中率 100%
 
-**本次更新：** v1.0.0 首次公开——11 个模块的方法论与引擎、统一数据层 kb.py、安装脚本；语料素材不入包，经本地进气阀接入
+**本次更新：** v1.0.1——安装名按管道顺序编号（`molu-01-console` ~ `molu-11-lens`），`/molu` 弹出列表与模块说明同步收紧为短句
 
 ## 目录
 
@@ -27,9 +27,9 @@
 
 ## molu 是什么
 
-Skill 是一套针对某类任务编写的 Agent 指令。安装 molu 后，可以在 Agent 对话中调用 `/molu-console` 或某个具体模块，例如 `/molu-writer`
+Skill 是一套针对某类任务编写的 Agent 指令。安装 molu 后，可以在 Agent 对话中调用 `/molu-01-console` 或某个具体模块，例如 `/molu-07-writer`
 
-如果你还不知道从哪里开始，把问题交给 `/molu-console`。它显示完整管道图、读取你当前所处的环节，判断现在适合先做洞察、出选题、写稿，还是先过审核；需要时调用对应模块并在同一对话中推进
+如果你还不知道从哪里开始，把问题交给 `/molu-01-console`。它显示完整管道图、读取你当前所处的环节，判断现在适合先做洞察、出选题、写稿，还是先过审核；需要时调用对应模块并在同一对话中推进
 
 molu 的主张是**深优先于快**：抓到热点先问背后的永恒痛点，出选题先确认写给谁，写完必须过审核。它不是流量预测器——不承诺数据，只交付可检查的方法与结构
 
@@ -60,7 +60,7 @@ npx -y skills add GeneMcGill/molu -g --all
 安装后，在目标 Agent 的对话中输入：
 
 ```text
-/molu-console 这套东西能干嘛
+/molu-01-console 这套东西能干嘛
 ```
 
 ### 手动复制安装
@@ -77,7 +77,7 @@ cp -r molu ~/.codex/skills/molu      # Codex
 
 ### 安装后没有看到命令
 
-先确认安装命令成功，并确认安装目标是当前正在使用的 Agent。Skill 的入口名称以所在 Agent 实际显示的为准；模块主名是 `console / insight / strategy / radar / topic / reuse / writer / video / guard / teardown / lens`
+先确认安装命令成功，并确认安装目标是当前正在使用的 Agent。Skill 的入口名称以所在 Agent 实际显示的为准；模块安装名为 `molu-01-console` ~ `molu-11-lens`，编号即管道顺序（01 总控 → 02 洞察 → 03 策略 → 04 雷达 → 05 选题 → 06 复用 → 07 写稿 → 08 短视频 → 09 审核 → 10 拆解 → 11 视角）
 
 ## 开始使用
 
@@ -86,17 +86,17 @@ cp -r molu ~/.codex/skills/molu      # Codex
 在 Agent 对话框输入：
 
 ```text
-/molu-console 这套东西能干嘛
+/molu-01-console 这套东西能干嘛
 ```
 
-总控台会输出管道图、列出 11 个模块、判断你卡在哪一环，并给出最小可行动作
+总控台会输出管道图、列出 11 个模块（01→11 即管道顺序）、判断你卡在哪一环，并给出最小可行动作
 
-### 不确定从哪里开始：把问题交给 `/molu-console`
+### 不确定从哪里开始：把问题交给 `/molu-01-console`
 
 把当前情况和问题写在命令后面。可以说得不完整，Agent 会先判断环节再推进：
 
 ```text
-/molu-console 我在做职场类公众号，写了三个月，单篇阅读一直停在 800 左右。帮我看看先解决定位、选题还是写法。
+/molu-01-console 我在做职场类公众号，写了三个月，单篇阅读一直停在 800 左右。帮我看看先解决定位、选题还是写法。
 ```
 
 ### 已经知道要做什么：直接调用模块
@@ -104,19 +104,19 @@ cp -r molu ~/.codex/skills/molu      # Codex
 在命令后附上问题、材料和希望得到的结果：
 
 ```text
-/molu-topic 我写职场省钱方向。给我 20 个可直接写的选题，每条带切入角度和依据。
+/molu-05-topic 我写职场省钱方向。给我 20 个可直接写的选题，每条带切入角度和依据。
 ```
 
 ```text
-/molu-writer 这是我的选题和素材。按公众号规格写一篇可发布的稿子。
+/molu-07-writer 这是我的选题和素材。按公众号规格写一篇可发布的稿子。
 ```
 
 ```text
-/molu-guard 这篇内容准备发公众号。帮我做发布前审核，标出风险位置。
+/molu-09-guard 这篇内容准备发公众号。帮我做发布前审核，标出风险位置。
 ```
 
 ```text
-/molu-teardown 拆解这篇 10 万+ 为什么能爆，并对比我的差距。
+/molu-10-teardown 拆解这篇 10 万+ 为什么能爆，并对比我的差距。
 ```
 
 ### 接入语料源（可选但推荐）
@@ -130,7 +130,7 @@ python3 molu/kb.py install <id>      # 接入语料源（带口径校验）
 
 ### 收到结果后：继续当前任务
 
-如果结果还需要补充，直接在当前对话中提供新事实、材料或修改意见，当前模块会接着处理。写完的内容在发布前一律过 `/molu-guard`，它有权说「别发」
+如果结果还需要补充，直接在当前对话中提供新事实、材料或修改意见，当前模块会接着处理。写完的内容在发布前一律过 `/molu-09-guard`，它有权说「别发」
 
 ## 怎样提供任务材料
 
@@ -148,7 +148,7 @@ python3 molu/kb.py install <id>      # 接入语料源（带口径校验）
 例如，选题问题可以这样描述：
 
 ```text
-/molu-topic 做面向刚入职场人群的号，关注方向是存钱与副业。给我 20 个选题，每条带靶子、切入角度和为什么有人看的依据。
+/molu-05-topic 做面向刚入职场人群的号，关注方向是存钱与副业。给我 20 个选题，每条带靶子、切入角度和为什么有人看的依据。
 ```
 
 如果任务需要本地文件、联网抓取或外部服务，Agent 还必须具备相应的工具或凭证。
@@ -157,17 +157,17 @@ python3 molu/kb.py install <id>      # 接入语料源（带口径校验）
 
 | 当前要做的事 | 入口 | 用途 |
 | --- | --- | --- |
-| 不确定该从哪一步开始 | [`/molu-console`](molu/console/SKILL.md) | 显示管道图、判断环节、调度模块 |
-| 搞清读者是谁、痛点在哪 | [`/molu-insight`](molu/insight/SKILL.md) | 区分观察与洞察，四层拆解读者的卡点 |
-| 定账号定位、节奏与形式 | [`/molu-strategy`](molu/strategy/SKILL.md) | 定位置、人群、节奏、形式，含「不做什么」 |
-| 抓热点并转成选题 | [`/molu-radar`](molu/radar/SKILL.md) | 采集实时热榜，红线过滤，给出可写角度 |
-| 生成一批选题 | [`/molu-topic`](molu/topic/SKILL.md) | 20 个选题，每条带靶子与依据 |
-| 一个主题持续产出 | [`/molu-reuse`](molu/reuse/SKILL.md) | 十个不同角度，五种换角度方式 |
-| 写长文或图文 | [`/molu-writer`](molu/writer/SKILL.md) | 按平台规格产出可发布稿 |
-| 写口播脚本 | [`/molu-video`](molu/video/SKILL.md) | 前 3 秒钩子、分镜、字幕切分 |
-| 发布前审核 | [`/molu-guard`](molu/guard/SKILL.md) | 法律/伦理/平台三层排查，三档结论，只读 |
-| 拆解爆款与诊断 | [`/molu-teardown`](molu/teardown/SKILL.md) | 12 指标 + 百分位定位，基于实测基线 |
-| 审视写作决策 | [`/molu-lens`](molu/lens/SKILL.md) | 用内容从业者判断标准审视决策，贯穿全程 |
+| 不确定该从哪一步开始 | [`/molu-01-console`](molu/console/SKILL.md) | 显示管道图、判断环节、调度模块 |
+| 搞清读者是谁、痛点在哪 | [`/molu-02-insight`](molu/insight/SKILL.md) | 区分观察与洞察，四层拆解读者的卡点 |
+| 定账号定位、节奏与形式 | [`/molu-03-strategy`](molu/strategy/SKILL.md) | 定位置、人群、节奏、形式，含「不做什么」 |
+| 抓热点并转成选题 | [`/molu-04-radar`](molu/radar/SKILL.md) | 采集实时热榜，红线过滤，给出可写角度 |
+| 生成一批选题 | [`/molu-05-topic`](molu/topic/SKILL.md) | 20 个选题，每条带靶子与依据 |
+| 一个主题持续产出 | [`/molu-06-reuse`](molu/reuse/SKILL.md) | 十个不同角度，五种换角度方式 |
+| 写长文或图文 | [`/molu-07-writer`](molu/writer/SKILL.md) | 按平台规格产出可发布稿 |
+| 写口播脚本 | [`/molu-08-video`](molu/video/SKILL.md) | 前 3 秒钩子、分镜、字幕切分 |
+| 发布前审核 | [`/molu-09-guard`](molu/guard/SKILL.md) | 法律/伦理/平台三层排查，三档结论，只读 |
+| 拆解爆款与诊断 | [`/molu-10-teardown`](molu/teardown/SKILL.md) | 12 指标 + 百分位定位，基于实测基线 |
+| 审视写作决策 | [`/molu-11-lens`](molu/lens/SKILL.md) | 用内容从业者判断标准审视决策，贯穿全程 |
 
 ## 仓库资料
 
