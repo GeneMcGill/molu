@@ -4,13 +4,13 @@
 
 **molu 墨炉**是中文内容生产引擎 Skill 包，包含洞察研究、策略定位、热点选题、写稿、发布审核与爆款拆解等能力，可安装到支持 Skills 的 AI Agent 中使用
 
-[![Version](https://img.shields.io/badge/version-1.0.2-2563EB.svg?style=flat-square)](https://github.com/GeneMcGill/molu/releases)
+[![Version](https://img.shields.io/badge/version-1.0.3-2563EB.svg?style=flat-square)](https://github.com/GeneMcGill/molu/releases)
 [![Skills](https://img.shields.io/badge/skills-11%20modules-7C3AED.svg?style=flat-square)](#按任务查找-skill)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-16A34A.svg?style=flat-square)](#许可证)
 
 支持 Claude Code、Codex、WorkBuddy 和其他兼容 Skills 的 Agent。方法论由 899 篇公开公众号原文（2015-09 ~ 2018-12，213 万字）蒸馏而来，经实测提取 16,227 个内容单元，逐字校验命中率 100%
 
-**本次更新：** v1.0.2——模块名保持 `molu-<模块>` 干净命名（无编号）；面板排序为 agent 字典序，主管道位次以 description 开头 ①→⑪ 标注；模块说明收紧为短句；徽章只留 Version / Skills / License
+**本次更新：** v1.0.3——install.sh 拓扑自检：目标目录解析后与源目录相同时（如 ~/.claude/skills 为整目录软链形态）跳过软链写入并提示改用 'install.sh agents' 实体安装，杜绝 molu-* 自指死链。v1.0.2——模块名保持 `molu-<模块>` 干净命名（无编号）；面板排序为 agent 字典序，主管道位次以 description 开头 ①→⑪ 标注；模块说明收紧为短句；徽章只留 Version / Skills / License
 
 ## 目录
 

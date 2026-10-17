@@ -90,6 +90,16 @@ PYEOF
 # ---------- 建软链（其他 agent 目录）
 link_target() {
   local dst="$1" n=0
+  # 拓扑自检：若 dst 本身就是指向 SOURCE_DIR 的整目录软链，
+  # ln 写进 dst 就等于写进源自己，会制造 molu-x -> molu-x 自指死链。改用 hub 实体安装。
+  local canon_dst canon_src
+  canon_dst="$(cd "$dst" 2>/dev/null && pwd -P)"
+  canon_src="$(cd "$SOURCE_DIR" 2>/dev/null && pwd -P)"
+  if [ -n "$canon_dst" ] && [ "$canon_dst" = "$canon_src" ]; then
+    warn "$dst 解析后与源目录 $SOURCE_DIR 相同（整目录软链拓扑）"
+    log "          已跳过软链写入；请直接用 'install.sh agents' 以实体目录装入 hub"
+    return 0
+  fi
   mkdir -p "$dst"
   for m in $USE_MODULES; do
     local name; name="$(skill_name "$m")"
