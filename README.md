@@ -7,6 +7,18 @@
   </picture>
 </a>
 
+</div>
+
+<h1 align="center">molu 墨炉</h1>
+
+<div align="center">
+
+> A **Chinese-language content production engine** packaged as AI Agent Skills — one package, eleven modules, from insight to review. Works with Claude Code, Codex, WorkBuddy and other Skills-compatible Agents.
+
+</div>
+
+<div align="center">
+
 [![CI](https://img.shields.io/badge/CI-passing-34A853.svg)][ci]
 [![Version](https://img.shields.io/badge/Version-1.0.3-4285F4.svg)][vlg]
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License%3A%20CC%20BY--NC%204.0-FBBC05.svg)][osi]
@@ -15,14 +27,10 @@
 
 </div>
 
-# molu 墨炉
-
-<div align="center">
-
-> A **Chinese-language content production engine** packaged as AI Agent Skills — one package, eleven modules, from insight to review. Works with Claude Code, Codex, WorkBuddy and other Skills-compatible Agents.
-
 > [!NOTE]
 > Distilled from 899 public WeChat Official Account articles (2015-09 ~ 2018-12, 2.13M characters) — 16,227 content units verified against source text with a 100% match rate.
+
+<div align="center">
 
 English | [简体中文](README.zh-CN.md)
 

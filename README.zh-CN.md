@@ -7,6 +7,18 @@
   </picture>
 </a>
 
+</div>
+
+<h1 align="center">molu 墨炉</h1>
+
+<div align="center">
+
+> 以 **AI Agent Skills** 打包的中文内容生产引擎 —— 装 1 个包，用 11 个模块，从洞察到复盘。兼容 Claude Code、Codex、WorkBuddy 及其他 Skills 兼容 Agent。
+
+</div>
+
+<div align="center">
+
 [![CI](https://img.shields.io/badge/CI-passing-34A853.svg)][ci]
 [![版本](https://img.shields.io/badge/版本-1.0.3-4285F4.svg)][vlg]
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License%3A%20CC%20BY--NC%204.0-FBBC05.svg)][osi]
@@ -15,14 +27,10 @@
 
 </div>
 
-# molu 墨炉
-
-<div align="center">
-
-> 以 **AI Agent Skills** 打包的中文内容生产引擎 —— 装 1 个包，用 11 个模块，从洞察到复盘。兼容 Claude Code、Codex、WorkBuddy 及其他 Skills 兼容 Agent。
-
 > [!NOTE]
 > 方法论由 899 篇公开公众号原文（2015-09 ~ 2018-12，213 万字）蒸馏而来，经实测提取 16,227 个内容单元，逐字校验命中率 100%。
+
+<div align="center">
 
 [English](README.md) | 简体中文
 
