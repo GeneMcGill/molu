@@ -9,14 +9,6 @@
 
 </div>
 
-<h1 align="center">molu 墨炉</h1>
-
-<div align="center">
-
-> A **Chinese-language content production engine** packaged as AI Agent Skills — one package, eleven modules, from insight to review. Works with Claude Code, Codex, WorkBuddy and other Skills-compatible Agents.
-
-</div>
-
 <div align="center">
 
 [![CI](https://img.shields.io/badge/CI-passing-34A853.svg)][ci]
@@ -24,6 +16,14 @@
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License%3A%20CC%20BY--NC%204.0-FBBC05.svg)][osi]
 
 `#content-engine` `#ai-skills` `#11-modules` `#deep-first` `#中文内容`
+
+</div>
+
+<h1 align="center">molu 墨炉</h1>
+
+<div align="center">
+
+> A **Chinese-language content production engine** packaged as AI Agent Skills — one package, eleven modules, from insight to review. Works with Claude Code, Codex, WorkBuddy and other Skills-compatible Agents.
 
 </div>
 
