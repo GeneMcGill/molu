@@ -10,7 +10,7 @@
 
 支持 Claude Code、Codex、WorkBuddy 和其他兼容 Skills 的 Agent。方法论由 899 篇公开公众号原文（2015-09 ~ 2018-12，213 万字）蒸馏而来，经实测提取 16,227 个内容单元，逐字校验命中率 100%
 
-**本次更新：** v1.0.3——install.sh 拓扑自检：目标目录解析后与源目录相同时（如 ~/.claude/skills 为整目录软链形态）跳过软链写入并提示改用 'install.sh agents' 实体安装，杜绝 molu-* 自指死链。v1.0.2——模块名保持 `molu-<模块>` 干净命名（无编号）；面板排序为 agent 字典序，主管道位次以 description 开头 ①→⑪ 标注；模块说明收紧为短句；徽章只留 Version / Skills / License
+**当前版本：** v1.0.3 —— 更新历史见 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 目录
 

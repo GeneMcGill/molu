@@ -10,7 +10,7 @@ English · [简体中文](README.zh-CN.md)
 
 Works with Claude Code, Codex, WorkBuddy, and other Skills-compatible Agents. The methodology is distilled from 899 public WeChat Official Account articles (2015-09 ~ 2018-12, 2.13M characters), with 16,227 content units extracted and verified against source texts with a 100% match rate.
 
-**This release:** v1.0.3 — install.sh topology self-check: when the resolved target directory is the same as the source directory (e.g. ~/.claude/skills is itself a symlink to the repo), symlink writing is skipped with a hint to use 'install.sh agents' for a physical install, preventing molu-* self-referencing dead links. v1.0.2 — module names stay as clean `molu-<module>` (no numbering); panel ordering is alphabetical by agent; pipeline order is marked ①→⑪ at the start of each description; badges trimmed to Version / Skills / License.
+**Current version:** v1.0.3 — see [CHANGELOG.md](CHANGELOG.md) for the release history.
 
 ## Table of Contents
 
