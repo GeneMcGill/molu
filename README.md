@@ -152,3 +152,7 @@ Raise an issue for a bug, a module idea, or a question about the method.
 This project's methodology is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — non-commercial use for personal learning and research must credit the source; commercial use requires contacting the author.
 
 **Content boundary**: this repo contains no verbatim corpus. When using this engine to create content, replace output with your own original phrasing; do not fabricate cases, and do not promise traffic numbers.
+
+---
+
+[Rendered via Readme Harness **v0.1.0** (commit `8c65495`, 2026-10-25); see docs/readme-harness.md for the layout baseline.](https://github.com/Guislabert/readme-harness)
