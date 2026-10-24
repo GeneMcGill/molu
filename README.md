@@ -147,6 +147,11 @@ Raise an issue for a bug, a module idea, or a question about the method.
 [vlg]: CHANGELOG.md
 [osi]: https://creativecommons.org/licenses/by-nc/4.0/
 
+## Acknowledgements
+
+- **Method**: influenced by [dbskill](https://github.com/dontbesilent2025/dbskill) and the 4A / consulting-framework tradition; see [License](LICENSE) for provenance.
+- **Header/layout**: [readme-harness](https://github.com/Guislabert/readme-harness) v0.1.0 (@`8c65495`).
+
 ## License
 
 This project's methodology is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — non-commercial use for personal learning and research must credit the source; commercial use requires contacting the author.
@@ -155,4 +160,4 @@ This project's methodology is licensed under [CC BY-NC 4.0](https://creativecomm
 
 ---
 
-[Rendered via Readme Harness **v0.1.0** (commit `8c65495`, 2026-10-25); see docs/readme-harness.md for the layout baseline.](https://github.com/Guislabert/readme-harness)
+_Layout: [readme-harness](https://github.com/Guislabert/readme-harness) v0.1.0 @`8c65495` · baseline: [docs/readme-harness.md](docs/readme-harness.md)_
