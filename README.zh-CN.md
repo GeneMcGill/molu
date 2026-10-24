@@ -1,5 +1,7 @@
 # molu 墨炉
 
+**🌐 [English](README.md)**
+
 > 以 AI Agent Skills 打包的中文内容生产引擎。
 
 <a href="https://github.com/Guislabert/molu">
@@ -8,8 +10,6 @@
     <img alt="molu 墨炉" src="assets/hero-light.svg" width="820">
   </picture>
 </a>
-
-**🌐 [English](README.md)**
 
 <div align="center">
 

@@ -1,5 +1,7 @@
 # molu 墨炉
 
+**🌐 [简体中文](README.zh-CN.md)**
+
 > Chinese-language content production engine packaged as AI Agent Skills.
 
 <a href="https://github.com/Guislabert/molu">
@@ -8,8 +10,6 @@
     <img alt="molu 墨炉" src="assets/hero-light.svg" width="820">
   </picture>
 </a>
-
-**🌐 [简体中文](README.zh-CN.md)**
 
 <div align="center">
 
