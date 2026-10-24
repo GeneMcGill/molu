@@ -9,6 +9,8 @@
   </picture>
 </a>
 
+**🌐 [简体中文](README.zh-CN.md)**
+
 <div align="center">
 
 [![CI](https://img.shields.io/badge/CI-passing-34A853.svg)][ci]
