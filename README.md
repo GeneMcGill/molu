@@ -15,8 +15,6 @@
 [![Version](https://img.shields.io/badge/Version-1.0.3-4285F4.svg)][vlg]
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License%3A%20CC%20BY--NC%204.0-FBBC05.svg)][osi]
 
-`#content-engine` `#ai-skills` `#11-modules` `#deep-first` `#中文内容`
-
 </div>
 
 <h1 align="center">molu 墨炉</h1>
