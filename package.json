@@ -1,0 +1,10 @@
+{
+  "name": "molu",
+  "version": "1.0.3",
+  "private": true,
+  "description": "Chinese-language content production engine packaged as AI Agent Skills — 11 modules.",
+  "license": "CC-BY-NC-4.0",
+  "scripts": {
+    "version-check": "node tools/version-check.mjs"
+  }
+}
