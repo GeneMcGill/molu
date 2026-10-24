@@ -152,3 +152,5 @@ Bug、模块想法或方法问题，请在 issue 提出。
 本项目方法论采用 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) —— 个人学习与研究的非商用使用必须署名；商用需联系作者授权。
 
 **内容边界**：本仓库不含逐字语料。用本引擎创作并发布内容时，请用自己的原创措辞；不虚构案例、不承诺流量数字。
+
+Layout: readme-harness v0.1.0 @`8c65495` · baseline: docs/readme-harness.md
