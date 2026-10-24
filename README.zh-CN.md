@@ -153,4 +153,4 @@ Bug、模块想法或方法问题，请在 issue 提出。
 
 **内容边界**：本仓库不含逐字语料。用本引擎创作并发布内容时，请用自己的原创措辞；不虚构案例、不承诺流量数字。
 
-Layout: readme-harness v0.1.0 @`8c65495` · baseline: docs/readme-harness.md
+Layout: readme-harness [v0.1.0](https://github.com/Guislabert/readme-harness/blob/main/CHANGELOG.md) @[`8c65495`](https://github.com/Guislabert/readme-harness/commit/8c65495) · baseline: [docs/readme-harness.md](docs/readme-harness.md)
